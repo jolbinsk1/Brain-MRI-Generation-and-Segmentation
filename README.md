@@ -68,6 +68,8 @@ pip install -r requirements.txt
 - All models were trained on 2D axial PNG slices derived from NIfTI volumes
 - Training was conducted on NVIDIA A40 GPUs via Tilburg University's GPU4EDU program
 - Training code (not included) was adapted from the original open-source repositories listed above
+- Code was developed with assistance from Claude.ai (Anthropic, 2024).
+
 ---
 
 ## Citation

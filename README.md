@@ -34,7 +34,7 @@ Specifically, this repository contains code for **preprocessing** and **select a
 Data is **not included** in this repository and must be obtained from the original sources with proper permissions:
 
 - **BraTS-2023 Adult Glioma** — available via [Synapse (syn51156910)](https://www.synapse.org/#!Synapse:syn51156910)
-- **UCSF-PDGM** — available via the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/) specifically via: (https://doi.org/10.7937/tcia.bdgf-8v37)
+- **UCSF-PDGM** — available via the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/) (specifically: (https://doi.org/10.7937/tcia.bdgf-8v37))
 
 Both datasets were used strictly for non-commercial research purposes, consistent with CC by 4.0. Any future replication of this study must adhere to dataset usage requirements and cite them properly.
 

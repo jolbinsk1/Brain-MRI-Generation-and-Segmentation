@@ -56,14 +56,12 @@ Each generative model was trained in a dedicated conda environment due to confli
 
    
 
-> **Note:** PyTorch must first be installed separately with the correct CUDA version for your system.
-> See [pytorch.org](https://pytorch.org/get-started/locally/) for specific instructions.
-> only then can you install requirements via:
+> **Note:** PyTorch must first be installed separately with the correct CUDA version for your system (see [pytorch.org](https://pytorch.org/get-started/locally/) for specific instructions). Only then can you install requirements:
 
-bash
-'''
+```
 pip install -r requirements.txt
-'''
+```
+
 
 Per-model dependency tables are available in the thesis appendix.
 ---

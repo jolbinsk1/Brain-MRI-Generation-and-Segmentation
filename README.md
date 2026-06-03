@@ -36,7 +36,8 @@ Data is **not included** in this repository and must be obtained from the origin
 - **BraTS-2023 Adult Glioma** — available via [Synapse (syn51156910)](https://www.synapse.org/#!Synapse:syn51156910)
 - **UCSF-PDGM** — available via the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/) specifically via: (https://doi.org/10.7937/tcia.bdgf-8v37)
 
-Both datasets were used strictly for non-commercial research purposes, consistent with their respective licenses. Any future replication of this study must adhere to dataset requirements. 
+Both datasets were used strictly for non-commercial research purposes, consistent with CC by 4.0. Any future replication of this study must adhere to dataset usage requirements and cite them properly.
+
 ---
 
 ## Repository Structure
@@ -51,8 +52,7 @@ Both datasets were used strictly for non-commercial research purposes, consisten
 ---
 ## Dependencies
 
-Each generative model was trained in a dedicated conda environment due to conflicting dependencies. Therefore, the `requirements.txt` only refers to the lbraries needed for data preprocessing and analysis:
-
+Each generative model was trained in a dedicated conda environment due to conflicting dependencies. Therefore, the `requirements.txt` only refers to the libraries needed for data preprocessing and analysis:
 
 Per-model dependency tables are available in the thesis appendix.
 
@@ -60,10 +60,9 @@ Per-model dependency tables are available in the thesis appendix.
 
 ## Notes
 
-- All models were trained on 2D axial PNG slices exported from NIfTI volumes
+- All models were trained on 2D axial PNG slices derived from NIfTI volumes
 - Training was conducted on NVIDIA A40 GPUs via Tilburg University's GPU4EDU program
-- Code was adapted from the original open-source repositories listed above
-
+- Training code (not included) was adapted from the original open-source repositories listed above
 ---
 
 ## Citation

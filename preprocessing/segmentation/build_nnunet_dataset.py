@@ -1,8 +1,13 @@
-# Creates a nnU-Net dataset from real BraTS 2023 data.
-# other conditions are written in build_nnunet_conditions.py
-# run this first to get the 100% real T1c train and test sets
 
-# dataset structures are visualized in nnUNet_folder_structure.txt
+'''
+Creates a dataset from real BraTS 2023 data that fits the nnU-Net 2D segmentation model proposed by Isensee et al. (2021).
+specific segmentation conditions are written in segmentation_conditions.py
+run this first to get the 100% real T1c train and test sets
+
+dataset structures are visualized in nnUNet_folder_structure.txt
+
+See original nnU-Net repo for more details: https://github.com/MIC-DKFZ/nnUNet
+'''
 
 import json
 import random

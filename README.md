@@ -52,10 +52,20 @@ Both datasets were used strictly for non-commercial research purposes, consisten
 ---
 ## Dependencies
 
-Each generative model was trained in a dedicated conda environment due to conflicting dependencies. Therefore, the `requirements.txt` only refers to the libraries needed for data preprocessing and analysis:
+Each generative model was trained in a dedicated conda environment due to conflicting dependencies. Therefore, the `requirements.txt` only refers to the libraries needed for data preprocessing and analysis. 
+
+   
+
+> **Note:** PyTorch must first be installed separately with the correct CUDA version for your system.
+> See [pytorch.org](https://pytorch.org/get-started/locally/) for specific instructions.
+> only then can you install requirements via:
+
+bash
+'''
+pip install -r requirements.txt
+'''
 
 Per-model dependency tables are available in the thesis appendix.
-
 ---
 
 ## Notes

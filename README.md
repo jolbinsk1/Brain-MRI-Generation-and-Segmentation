@@ -46,15 +46,15 @@ Both datasets were used strictly for non-commercial research purposes, consisten
 ├── analysis/          # image quality metrics and error analysis
 ├── preprocessing/     # data preprocessing pipelines (general, for each model, and segmentation)
 ├── results/           # summary segmentation and image fidelity results
+├── requirements.txt   # dependencies for preprocessing and analysis
 └── README.md
+
 ```
 
 ---
 ## Dependencies
 
-Each generative model was trained in a dedicated conda environment due to conflicting dependencies. Therefore, the `requirements.txt` only refers to the libraries needed for data preprocessing and analysis. 
-
-   
+Each generative model was trained in a dedicated conda environment due to conflicting dependencies. Per-model dependency tables are available in the thesis appendix. The `requirements.txt` only refers to the libraries needed for data preprocessing and analysis. 
 
 > **Note:** PyTorch must first be installed separately with the correct CUDA version for your system (see [pytorch.org](https://pytorch.org/get-started/locally/) for specific instructions). Only then can you install requirements:
 
@@ -62,8 +62,6 @@ Each generative model was trained in a dedicated conda environment due to confli
 pip install -r requirements.txt
 ```
 
-
-Per-model dependency tables are available in the thesis appendix.
 ---
 
 ## Notes

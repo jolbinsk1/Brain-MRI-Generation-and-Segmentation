@@ -11,7 +11,7 @@ The thesis investigates whether state-of-the-art generative models can synthesiz
 
 T1c scans are critical for glioma assessment but are frequently absent from clinical and research datasets due to cost, scanner availability, and contrast agent contraindications. This study evaluates four generative models adapted to T1c synthesis and assesses their utility in a downstream segmentation task.
 
-**Key finding:** Synthetic T1c from two conditional models (Pix2pixRAD and SynDiff) improved segmentation over missing T1c conditions, though performance did not match real T1c. Enhancing tumor regions were consistently the most challenging to synthesize across all conditional models.
+**Key findings:** Synthetic T1c from two conditional models (Pix2pixRAD and SynDiff) improved segmentation over missing T1c conditions, though performance did not match real T1c. Enhancing tumor regions were consistently the most challenging to synthesize across all conditional models. An unconditional GAN (StyleGAN2-ADA) was able to learn the T1c distribution. 
 
 ---
 
@@ -19,13 +19,13 @@ Specifically, this repository contains code for **preprocessing** and **select a
 
 ## Models
 
-| Model | Type | Role |
-|---|---|---|
-| [Pix2pixRAD](https://github.com/giemmecci/pix2pixRAD) | Conditional GAN | T1c synthesis |
-| [StyleGAN2-ADA](https://github.com/NVlabs/stylegan2-ada-pytorch) | Unconditional GAN | T1c distribution learning |
-| [SynDiff](https://github.com/icon-lab/SynDiff) | Conditional Diffusion | T1c synthesis |
-| [Custom Diffusion](https://github.com/Miretpl/synthetic-brain-mri-project) | Conditional Diffusion | T1c synthesis |
-| [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) | Segmentation | Downstream segmentation |
+| Model | Type |
+|---|---|
+| [Pix2pixRAD](https://github.com/giemmecci/pix2pixRAD) | Conditional GAN 
+| [StyleGAN2-ADA](https://github.com/NVlabs/stylegan2-ada-pytorch) | Unconditional GAN 
+| [SynDiff](https://github.com/icon-lab/SynDiff) | Conditional Diffusion 
+| [Custom Diffusion](https://github.com/Miretpl/synthetic-brain-mri-project) | Conditional Diffusion
+| [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) | Segmentation 
 
 ---
 
@@ -48,7 +48,6 @@ Both datasets were used strictly for non-commercial research purposes, consisten
 ├── results/           # summary segmentation and image fidelity results
 ├── requirements.txt   # dependencies for preprocessing and analysis
 └── README.md
-
 ```
 
 ---
@@ -73,6 +72,6 @@ pip install -r requirements.txt
 
 ## Citation
 
-If you use this code, please cite the original model repositories and datasets as appropriate. 
+If you use this code, please cite the original model repositories and datasets. 
 
 For questions about this project, feel free to reach out directly on github or via email: olbinski.julian@gmail.com

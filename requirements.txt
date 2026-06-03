@@ -1,0 +1,15 @@
+# Core
+numpy
+scipy
+matplotlib
+pandas
+Pillow
+
+# Image metrics
+torchmetrics[image]
+
+# Image processing
+scikit-image
+imageio
+nibabel
+h5py

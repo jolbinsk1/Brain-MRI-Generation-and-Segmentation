@@ -1,5 +1,5 @@
 # Data
-*.png
+# *.png
 *.nii.gz
 *.npy
 *.mat

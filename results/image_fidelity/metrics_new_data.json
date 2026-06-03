@@ -1,0 +1,37 @@
+{
+    "image_quality_metrics": [
+        {
+            "model": "SynDiff",
+            "condition": "T1n + seg*0.3 -> T1c",
+            "FID": 19.3480,
+            "KID_mean": 0.012160,
+            "KID_std": 0.000743,
+            "SSIM": 0.9442,
+            "PSNR_dB": 27.6132,
+            "GMSD": 0.1198,
+            "LPIPS": 0.0638
+        },
+        {
+            "model": "Custom Diffusion",
+            "condition": "seg -> T1c",
+            "FID": 67.6644,
+            "KID_mean": 0.057258,
+            "KID_std": 0.001523,
+            "SSIM": 0.1608,
+            "PSNR": 15.5653,
+            "GMSD": 0.2592,
+            "LPIPS": 0.2572
+        },
+        {
+            "model": "Pix2pix",
+            "condition": "[T1n, seg_scaled, FLAIR] -> T1c",
+            "FID": 48.8347,
+            "KID_mean": 0.033915,
+            "KID_std": 0.001048,
+            "SSIM": 0.9409,
+            "PSNR_dB": 26.2619,
+            "GMSD": 0.1164,
+            "LPIPS": 0.0791
+        }
+    ]
+}

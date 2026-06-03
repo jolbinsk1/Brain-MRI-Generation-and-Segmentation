@@ -1,0 +1,88 @@
+{
+    "image_quality_metrics": [
+        {
+            "model": "SynDiff",
+            "condition": "FLAIR -> T1c",
+            "FID": 32.3281,
+            "KID_mean": 0.020454,
+            "KID_std": 0.000660,
+            "SSIM": 0.9242,
+            "PSNR_dB": 24.3295,
+            "GMSD": 0.1453,
+            "LPIPS": 0.0888
+        },
+        {
+            "model": "SynDiff",
+            "condition": "T1n -> T1c",
+            "FID": 31.7084,
+            "KID_mean": 0.021751,
+            "KID_std": 0.001327,
+            "SSIM": 0.9374,
+            "PSNR_dB": 24.8422,
+            "GMSD": 0.1298,
+            "LPIPS": 0.0756
+        },
+        {
+            "model": "SynDiff",
+            "condition": "T1n + seg*0.1 -> T1c",
+            "FID": 28.7194,
+            "KID_mean": 0.019488,
+            "KID_std": 0.001059,
+            "SSIM": 0.9372,
+            "PSNR_dB": 25.3628,
+            "GMSD": 0.1298,
+            "LPIPS": 0.0736
+        },
+        {
+            "model": "SynDiff (15 slices)",
+            "condition": "T1n + seg*0.3 -> T1c",
+            "FID": 26.2916,
+            "KID_mean": 0.017557,
+            "KID_std": 0.000902,
+            "SSIM": 0.9383,
+            "PSNR_dB": 25.5146,
+            "GMSD": 0.1267,
+            "LPIPS": 0.0697
+        },
+        {
+            "model": "SynDiff (100 slices)",
+            "condition": "T1n + seg*0.3 -> T1c",
+            "FID": 18.5208,
+            "KID_mean": 0.010510,
+            "KID_std": 0.000743,
+            "SSIM": 0.9415,
+            "PSNR_dB": 25.9029,
+            "GMSD": 0.1219,
+            "LPIPS": 0.0592
+        },
+        {
+            "model": "Custom Diffusion",
+            "condition": "seg -> T1c",
+            "FID": 97.5118,
+            "KID_mean": 0.084311,
+            "KID_std": 0.002056,
+            "SSIM": 0.1061,
+            "PSNR": 11.6982,
+            "GMSD": 0.3482,
+            "LPIPS": 0.4324
+        },
+        {
+            "model": "Pix2pixRAD",
+            "condition": "[T1n, seg_scaled, FLAIR] -> T1c",
+            "FID": 37.1706,
+            "KID_mean": 0.025983,
+            "KID_std": 0.001256,
+            "SSIM": 0.9509,
+            "PSNR_dB": 27.6181,
+            "GMSD": 0.1171,
+            "LPIPS": 0.0634
+        },
+        {
+            "model": "StyleGAN2-ADA",
+            "condition": "unconditioned T1c",
+            "FID": 20.4380,
+            "KID_mean": 0.006002,
+            "KID_std": 0.000511
+        }
+    ]
+}

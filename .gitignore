@@ -1,0 +1,18 @@
+# Data
+*.png
+*.nii.gz
+*.npy
+*.mat
+
+# Model weights
+*.pth
+*.pt
+*.ckpt
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Outputs
+*.log

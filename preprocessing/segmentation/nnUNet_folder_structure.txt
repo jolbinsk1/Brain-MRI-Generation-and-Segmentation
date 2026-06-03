@@ -1,0 +1,40 @@
+
+Required Source Dataset Structure:
+    local_root_folder/
+    ├── pruned_data_folder/
+    │   ├── train/
+    │   │   └── BraTS-GLI-*-* 
+    │   │       ├── t2f/  *.png   (FLAIR)
+    │   │       ├── t1n/  *.png   (T1 weighted)
+    │   │       ├── t1c/  *.png   (T1 contrast)
+    │   │       ├── t2w/  *.png   (T2 weighted)
+    │   │       └── seg/  *.png
+    │   ├── validation/            (same structure)
+    │   └── test/                  (same structure)
+    ├── train_patients.txt
+    ├── validation_patients.txt
+    └── test_patients.txt
+
+
+imagesTr/   — train + val patients
+labelsTr/   — segmentation masks for train + val
+imagesTs/   — test patients, all modality channels
+labelsTs/   — segmentation masks for test 
+
+
+    nnUNet_raw/
+    └── Dataset{ID}_{name}/
+        ├── dataset.json
+        ├── imagesTr/
+        │   ├── BraTS-GLI-00000-000_0000_0000.png   ← FLAIR,  slice 0000
+        │   ├── BraTS-GLI-00000-000_0000_0001.png   ← T1n,    slice 0000
+        │   ├── BraTS-GLI-00000-000_0000_0002.png   ← T1c,    slice 0000
+        │   ├── BraTS-GLI-00000-000_0000_0003.png   ← T2w,    slice 0000
+        │   └── ...
+        ├── labelsTr/
+        │   ├── BraTS-GLI-00000-000_0000.png
+        │   └── ...
+        ├── imagesTs/
+        │   └── ...  (same channel structure, no labels)
+        └── labelsTs/
+            └── ...  (test ground truth, for evaluation)
